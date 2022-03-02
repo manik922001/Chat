@@ -1,0 +1,426 @@
+<html>
+<head>
+<link rel="stylesheet" href="project.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"> 
+<script src="project.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<div class="row no-gutters">
+	  <div class="col-md-4 border-right">
+		<div class="settings-tray">
+		  <img class="profile-image" src="chat.png" alt="Profile img">
+		  <span class="settings-tray--right float-right">
+			<i class="material-icons">cached</i>
+			<i class="material-icons">message</i>
+			<i class="material-icons">menu</i>
+		  </span>
+		</div>
+		<div class="search-box">
+		  <div class="input-wrapper">
+			<i class="material-icons">search</i>
+			<input placeholder="Search here" type="text">
+		  </div>
+		</div>
+		<div class="friend-drawer friend-drawer--onhover" onclick="myfun()">
+		  <img class="profile-image" src="manik.png" alt="">
+		  <div class="text">
+			<h6>Manik Dhawan</h6>
+			<p class="text-muted">Working with html,css</p>
+		  </div>
+		  <span class="time text-muted small">13:21</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover" onclick="myfun1()">
+		  <img class="profile-image" src="rahul.png" alt="">
+		  <div class="text">
+			<h6>Rahul Adhikari</h6>
+			<p class="text-muted">Working with html,js</p>
+		  </div>
+		  <span class="time text-muted small">00:32</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover " onclick="myfun2 ()">
+		  <img class="profile-image" src="parth.png" alt="">
+		  <div class="text">
+			<h6>Parth Sharma</h6>
+			<p class="text-muted">Working with html,css,js</p>
+		  </div>
+		  <span class="time text-muted small">13:21</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover" onclick="myfun3()">
+		  <img class="profile-image" src="google.png" alt="">
+		  <div class="text">
+			<h6>Internet</h6>
+			<p class="text-muted">Searching for logo</p>
+		  </div>
+		  <span class="time text-muted small">13:21</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover" onclick="myfun4()">
+		  <img class="profile-image" src="abc.png" alt="">
+		  <div class="text">
+			<h6>ABC</h6>
+			<p class="text-muted">ABCD</p>
+		  </div>
+		  <span class="time text-muted small">13:21</span>
+		</div>
+		<hr>
+		
+		  </div>
+        <div class="col-md-8" id="manik"  style="display:none">
+		<div class="settings-tray">
+			<div class="friend-drawer no-gutters friend-drawer--grey">
+			<img class="profile-image" src="manik.png" alt="">
+			<div class="text">
+			  <h6>Manik Dhawan</h6>
+			  <p class="text-muted">Working with css,html</p>
+			</div>
+			<span class="settings-tray--right">
+			  <i class="material-icons">cached</i>
+			  <i class="material-icons">message</i>
+			  <i class="material-icons">menu</i>
+			</span>
+		  </div>
+		</div>
+		<div class="chat-panel">
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				Hello dude!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				Hi Bro!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				How are you?
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				I am fine.
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				What about you?
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				You did good work in project.
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				Thanks bro
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-12">
+			  <div class="chat-box-tray">
+				<i class="material-icons">sentiment_very_satisfied</i>
+				<input type="text" placeholder="Type your message here...">
+				<i class="material-icons">mic</i>
+				<i class="material-icons">send</i>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+  
+   <div class="col-md-8" id="rahul" style="display:none">
+		<div class="settings-tray">
+			<div class="friend-drawer no-gutters friend-drawer--grey">
+			<img class="profile-image" src="rahul.png" alt="">
+			<div class="text">
+			  <h6>Rahul Adhikari</h6>
+			  <p class="text-muted">Working with js,html</p>
+			</div>
+			<span class="settings-tray--right">
+			  <i class="material-icons">cached</i>
+			  <i class="material-icons">message</i>
+			  <i class="material-icons">menu</i>
+			</span>
+		  </div>
+		</div>
+		<div class="chat-panel">
+		  <div class="row no-gutters">
+			<div class="col-md-3  ">
+			  <div class="chat-bubble chat-bubble--left">
+				How are you bro!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				I am fine!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				What about you!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				I am also fine.
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				You did great work in making project!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				You also!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 ">
+			  <div class="chat-bubble chat-bubble--left">
+				Thanks bro
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-12">
+			  <div class="chat-box-tray">
+				<i class="material-icons">sentiment_very_satisfied</i>
+				<input type="text" placeholder="Type your message here...">
+				<i class="material-icons">mic</i>
+				<i class="material-icons">send</i>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+  
+   <div class="col-md-8" id="parth" style="display:none">
+		<div class="settings-tray">
+			<div class="friend-drawer no-gutters friend-drawer--grey">
+			<img class="profile-image" src="parth.png" alt="">
+			<div class="text">
+			  <h6>Parth Sharma</h6>
+			  <p class="text-muted">Working with css,html.js</p>
+			</div>
+			<span class="settings-tray--right">
+			  <i class="material-icons">cached</i>
+			  <i class="material-icons">message</i>
+			  <i class="material-icons">menu</i>
+			</span>
+		  </div>
+		</div>
+		<div class="chat-panel">
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				How are you bro!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				I am fine.
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 ">
+			  <div class="chat-bubble chat-bubble--left">
+				Are you satisfied with project?
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				Ofcouse!great work bro.
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				Thanks Buddy
+			  </div>
+			</div>
+		  </div>
+		 
+		  <div class="row">
+			<div class="col-12">
+			  <div class="chat-box-tray">
+				<i class="material-icons">sentiment_very_satisfied</i>
+				<input type="text" placeholder="Type your message here...">
+				<i class="material-icons">mic</i>
+				<i class="material-icons">send</i>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+	
+	<div class="col-md-8" id="internet" style="display:none">
+		<div class="settings-tray">
+			<div class="friend-drawer no-gutters friend-drawer--grey">
+			<img class="profile-image" src="google.png" alt="">
+			<div class="text">
+			  <h6>Internet</h6>
+			  <p class="text-muted">Working with content and format</p>
+			</div>
+			<span class="settings-tray--right">
+			  <i class="material-icons">cached</i>
+			  <i class="material-icons">message</i>
+			  <i class="material-icons">menu</i>
+			</span>
+		  </div>
+		</div>
+		<div class="chat-panel">
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				Hello Google
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 ">
+			  <div class="chat-bubble chat-bubble--left">
+				yes sir!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				You did great help in my Project.
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 ">
+			  <div class="chat-bubble chat-bubble--left">
+				Thank You Sir
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-12">
+			  <div class="chat-box-tray">
+				<i class="material-icons">sentiment_very_satisfied</i>
+				<input type="text" placeholder="Type your message here...">
+				<i class="material-icons">mic</i>
+				<i class="material-icons">send</i>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+  
+    <div class="col-md-8" id="abc" style="display:none">
+		<div class="settings-tray">
+			<div class="friend-drawer no-gutters friend-drawer--grey">
+			<img class="profile-image" src="abc.png" alt="">
+			<div class="text">
+			  <h6>ABC</h6>
+			  <p class="text-muted">ABCD</p>
+			</div>
+			<span class="settings-tray--right">
+			  <i class="material-icons">cached</i>
+			  <i class="material-icons">message</i>
+			  <i class="material-icons">menu</i>
+			</span>
+		  </div>
+		</div>
+		<div class="chat-panel">
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				Hi abc!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 ">
+			  <div class="chat-bubble chat-bubble--left">
+				Hello
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				How can i help you
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				No thanks ,its ok.
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				ok sir.
+			  </div>
+			</div>
+		  </div>
+		  
+		  <div class="row">
+			<div class="col-12">
+			  <div class="chat-box-tray">
+				<i class="material-icons">sentiment_very_satisfied</i>
+				<input type="text" placeholder="Type your message here...">
+				<i class="material-icons">mic</i>
+				<i class="material-icons">send</i>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+</div>
+</div>
+  
+  <!-- <script src="project.js"></script> -->
+</body>
+</html>
